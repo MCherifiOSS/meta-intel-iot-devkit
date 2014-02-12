@@ -14,8 +14,9 @@ DISTRO_CODENAME = "monkey"
 DISTRO_NAME = "iot-devkit (Intel IoT Development Kit)"
 MAINTAINER = "Yocto Devkit <yocto-devkit@linux.intel.com>"
 
-TARGET_VENDOR = "-iotkit"
-SDK_VENDOR = "-iotkit"
+# Changing these currently breaks the Eclipse plugin
+#TARGET_VENDOR = "-iotkit"
+#SDK_VENDOR = "-iotkit"
 
 SSTATE_DIR = "${TOPDIR}/../devkit-cache/sstate-cache"
 CACHE_forcevariable = "${TOPDIR}/../devkit-cache/cache"
