@@ -118,8 +118,8 @@ MACHINE ??= "clanton"
 #
 #DISTRO ?= "iot-devkit-spi"
 #DISTRO ?= "iot-devkit-spi-locked"
-#DISTRO ?= "iot-devkit"
-DISTRO ?= "iot-devkit-locked"
+#DISTRO ?= "iot-devkit-locked"
+DISTRO ?= "iot-devkit"
 
 #
 # Package Management configuration
