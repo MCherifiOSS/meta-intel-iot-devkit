@@ -51,8 +51,4 @@ IMAGE_INSTALL += "iotkit-agent"
 
 IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
 
-# Unlike default meta-oe we build opencv without libav support
-# so don't require changing our license to commercial
-IMAGE_INSTALL += "opencv python-opencv"
-
 EXTRA_IMAGEDEPENDS = "grub-conf"
