@@ -47,8 +47,6 @@ IMAGE_INSTALL += "lighttpd"
 IMAGE_INSTALL += "naui"
 IMAGE_INSTALL += "libhd44780"
 
-IMAGE_INSTALL += "iotkit-agent"
-
 IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
 
 EXTRA_IMAGEDEPENDS = "grub-conf"
