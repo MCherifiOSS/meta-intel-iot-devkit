@@ -9,8 +9,8 @@ SANITY_TESTED_DISTROS = " \
             openSUSE-project-12.3 \n \
             "
 
-DISTRO_VERSION = "1.0"
-DISTRO_CODENAME = "monkey"
+DISTRO_VERSION = "1.1"
+DISTRO_CODENAME = "koala"
 DISTRO_NAME = "iot-devkit (Intel IoT Development Kit)"
 MAINTAINER = "Yocto Devkit <yocto-devkit@linux.intel.com>"
 
