@@ -9,3 +9,5 @@ IMAGE_INSTALL += "kernel-module-usb-storage"
 IMAGE_INSTALL += "kernel-module-ehci-hcd kernel-module-ehci-pci kernel-module-ohci-hcd"
 IMAGE_INSTALL += "kernel-module-stmmac"
 
+PACKAGE_INSTALL_remove = "initramfs-live-install initramfs-live-install-efi"
+
