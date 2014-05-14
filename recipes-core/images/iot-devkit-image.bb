@@ -42,6 +42,7 @@ IMAGE_INSTALL += "linux-firmware-iwlwifi-135-6"
 IMAGE_INSTALL += "bluez4"
 
 IMAGE_INSTALL += "avahi"
+IMAGE_INSTALL += "fuse-utils"
 
 IMAGE_INSTALL += "lighttpd"
 IMAGE_INSTALL += "naui"
