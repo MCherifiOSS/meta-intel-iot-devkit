@@ -10,7 +10,6 @@ BBLAYERS ?= " \
   ##OEROOT##/meta-oe \
   ##OEROOT##/meta-iot-devkit \
   ##OEROOT##/meta-yocto \
-  ##OEROOT##/meta-intel \
   ##OEROOT##/meta-clanton-bsp \
   ##OEROOT##/meta-galileo \
   "
