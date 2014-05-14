@@ -8,6 +8,7 @@ BBFILES ?= ""
 BBLAYERS ?= " \
   ##OEROOT##/meta \
   ##OEROOT##/meta-oe \
+  ##OEROOT##/meta-oe/meta-filesystems \
   ##OEROOT##/meta-iot-devkit \
   ##OEROOT##/meta-yocto \
   ##OEROOT##/meta-clanton-bsp \
