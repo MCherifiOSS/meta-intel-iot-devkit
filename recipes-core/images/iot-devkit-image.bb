@@ -31,7 +31,7 @@ IMAGE_INSTALL += "libstdc++"
 IMAGE_INSTALL += "sysstat"
 
 IMAGE_INSTALL += "python python-modules python-numpy"
-IMAGE_INSTALL += "alsa-lib alsa-utils alsa-tools"
+IMAGE_INSTALL += "alsa-lib alsa-utils"
 IMAGE_INSTALL += "wireless-tools"
 IMAGE_INSTALL += "wpa-supplicant"
 IMAGE_INSTALL += "openssh"
