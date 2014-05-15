@@ -6,6 +6,7 @@ IMAGE_INSTALL += "cmake"
 IMAGE_INSTALL += "binutils"
 IMAGE_INSTALL += "packagegroup-core-tools-profile"
 IMAGE_INSTALL += "packagegroup-core-buildessential"
+IMAGE_INSTALL += "git"
 
 IMAGE_FEATURES += "dev-pkgs tools-sdk"
 EXTRA_IMAGE_FEATURES = "debug-tweaks"
