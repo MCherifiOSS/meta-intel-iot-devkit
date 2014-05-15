@@ -44,6 +44,7 @@ IMAGE_INSTALL += "bluez4"
 IMAGE_INSTALL += "avahi"
 IMAGE_INSTALL += "fuse-utils"
 
+IMAGE_INSTALL += "swig-v8"
 IMAGE_INSTALL += "lighttpd"
 
 IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
