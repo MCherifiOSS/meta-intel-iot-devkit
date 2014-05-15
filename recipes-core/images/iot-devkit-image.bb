@@ -45,7 +45,6 @@ IMAGE_INSTALL += "avahi"
 IMAGE_INSTALL += "fuse-utils"
 
 IMAGE_INSTALL += "lighttpd"
-IMAGE_INSTALL += "libhd44780"
 
 IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
 
