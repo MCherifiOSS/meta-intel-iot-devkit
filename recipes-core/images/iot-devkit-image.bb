@@ -50,4 +50,6 @@ IMAGE_INSTALL += "lighttpd"
 
 IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
 
+IMAGE_INSTALL += "lib32-uclibc lib32-uclibc-libm lib32-libstdc++"
+
 EXTRA_IMAGEDEPENDS = "grub-conf"
