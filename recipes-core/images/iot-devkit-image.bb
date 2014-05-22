@@ -45,7 +45,7 @@ IMAGE_INSTALL += "avahi libdns-sd"
 IMAGE_INSTALL += "fuse-utils"
 IMAGE_INSTALL += "connman connman-client"
 
-IMAGE_INSTALL += "swig-v8"
+IMAGE_INSTALL += "swig"
 IMAGE_INSTALL += "lighttpd"
 
 IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
