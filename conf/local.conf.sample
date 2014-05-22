@@ -116,10 +116,11 @@ MACHINE ??= "clanton"
 #     customisation you will need to use the non-locked DISTRO options
 #     instead, and the system will build packages from source code.
 #
+#DISTRO ?= "iot-devkit"
 #DISTRO ?= "iot-devkit-spi"
 #DISTRO ?= "iot-devkit-spi-locked"
 #DISTRO ?= "iot-devkit-locked"
-DISTRO ?= "iot-devkit"
+DISTRO ?= "iot-devkit-multilibc"
 
 #
 # Package Management configuration

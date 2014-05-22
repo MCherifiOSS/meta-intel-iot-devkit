@@ -51,5 +51,16 @@ IMAGE_INSTALL += "lighttpd"
 IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
 
 IMAGE_INSTALL += "lib32-uclibc lib32-uclibc-libm lib32-libstdc++"
+IMAGE_INSTALL += "galileo-target"
+
+ROOTFS_POSTPROCESS_COMMAND += "install_sketch ; "
+
+install_sketch() {
+  # Create /sketch directory required to run arduino sketches
+  install -d ${IMAGE_ROOTFS}/sketch
+  # This allows uclibc compiled binaries to find the uclibc loader note that
+  # binaries will not run unless LD_LIBRARY_PATH is set correctly
+  cd ${IMAGE_ROOTFS}/lib/; ln -s ../lib32/ld-uClibc.so.0
+}
 
 EXTRA_IMAGEDEPENDS = "grub-conf"
