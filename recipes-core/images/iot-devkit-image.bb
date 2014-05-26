@@ -39,7 +39,7 @@ IMAGE_INSTALL += "nodejs"
 
 IMAGE_INSTALL += "linux-firmware-iwlwifi-6000g2a-6"
 IMAGE_INSTALL += "linux-firmware-iwlwifi-135-6"
-IMAGE_INSTALL += "bluez4"
+IMAGE_INSTALL += "bluez5"
 
 IMAGE_INSTALL += "avahi libdns-sd"
 IMAGE_INSTALL += "fuse-utils"

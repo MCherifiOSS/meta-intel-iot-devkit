@@ -9,6 +9,7 @@ BBLAYERS ?= " \
   ##OEROOT##/meta \
   ##OEROOT##/meta-oe \
   ##OEROOT##/meta-oe/meta-filesystems \
+  ##OEROOT##/meta-eca \
   ##OEROOT##/meta-iot-devkit \
   ##OEROOT##/meta-yocto \
   ##OEROOT##/meta-clanton-bsp \
