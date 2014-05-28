@@ -45,6 +45,8 @@ IMAGE_INSTALL += "avahi libdns-sd"
 IMAGE_INSTALL += "fuse-utils"
 IMAGE_INSTALL += "connman connman-client"
 
+IMAGE_INSTALL += "maa"
+
 IMAGE_INSTALL += "swig"
 IMAGE_INSTALL += "lighttpd"
 
