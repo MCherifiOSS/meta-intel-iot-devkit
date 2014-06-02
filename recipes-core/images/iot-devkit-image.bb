@@ -57,7 +57,10 @@ IMAGE_INSTALL += "lighttpd"
 
 IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
 
+# these are the only lib32-* libs we want on our image
 IMAGE_INSTALL += "lib32-uclibc lib32-uclibc-libm lib32-libstdc++"
+# make sure no lib32-* libs get chosen by IMAGE_FEATURES
+PACKAGE_EXCLUDE_COMPLEMENTARY = "lib32-.*"
 IMAGE_INSTALL += "galileo-target"
 
 ROOTFS_POSTPROCESS_COMMAND += "install_sketch ; "
