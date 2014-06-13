@@ -50,7 +50,7 @@ IMAGE_INSTALL += "icu"
 
 IMAGE_INSTALL += "opencv"
 
-IMAGE_INSTALL += "maa"
+IMAGE_INSTALL += "maa upm"
 
 IMAGE_INSTALL += "swig"
 IMAGE_INSTALL += "lighttpd"
