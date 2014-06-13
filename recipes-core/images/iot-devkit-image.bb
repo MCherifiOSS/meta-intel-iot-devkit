@@ -63,7 +63,7 @@ IMAGE_INSTALL += "lib32-uclibc lib32-uclibc-libm lib32-libstdc++ lib32-uclibc-li
 PACKAGE_EXCLUDE_COMPLEMENTARY = "lib32-.*"
 IMAGE_INSTALL += "galileo-target"
 
-ROOTFS_POSTPROCESS_COMMAND += "install_sketch ; "
+ROOTFS_POSTPROCESS_COMMAND += "install_sketch ; install_repo ;"
 
 install_sketch() {
   # Create /sketch directory required to run arduino sketches
@@ -71,6 +71,10 @@ install_sketch() {
   # This allows uclibc compiled binaries to find the uclibc loader note that
   # binaries will not run unless LD_LIBRARY_PATH is set correctly
   cd ${IMAGE_ROOTFS}/lib/; ln -s ../lib32/ld-uClibc.so.0
+}
+
+install_repo() {
+  echo "src maa-upm http://iotdk.intel.com/repos/1.1/intelgalactic" > ${IMAGE_ROOTFS}/etc/opkg/maa-upm.conf
 }
 
 EXTRA_IMAGEDEPENDS = "grub-conf"
