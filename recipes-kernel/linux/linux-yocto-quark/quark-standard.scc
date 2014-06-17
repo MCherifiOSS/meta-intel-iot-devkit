@@ -1,4 +1,4 @@
-define KMACHINE clanton
+define KMACHINE quark
 define KTYPE standard
 define KARCH i386
 
