@@ -12,7 +12,7 @@ BBLAYERS ?= " \
   ##OEROOT##/meta-eca \
   ##OEROOT##/meta-iot-devkit \
   ##OEROOT##/meta-yocto \
-  ##OEROOT##/meta-clanton-bsp \
+  ##OEROOT##/meta-quark-bsp \
   ##OEROOT##/meta-galileo \
   "
 BBLAYERS_NON_REMOVABLE ?= " \
