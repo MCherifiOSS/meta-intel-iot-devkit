@@ -822,29 +822,29 @@ SIGGEN_LOCKEDSIGS = "\
     linux-libc-headers:do_populate_lic:db93e7df3871e8427cb369527e7063c9 \
     linux-libc-headers:do_populate_sysroot:74973fe03d6da64e0db87e80afc436e2 \
     linux-libc-headers:do_unpack:8db643768f86134093c6adab8111617a \
-    linux-yocto-clanton:do_bundle_initramfs:03a0b7d8cf5646a3e1e4b7c1b3d1c29e \
-    linux-yocto-clanton:do_compile:3c46f41f1ef9919896d80990dd70226e \
-    linux-yocto-clanton:do_compile_kernelmodules:46212dc97f3a7199b6f91471755b289f \
-    linux-yocto-clanton:do_configure:dbdf1a4ada7925732953d9bef7f8dc2e \
-    linux-yocto-clanton:do_deploy:ea7810cb2da47a2d084ca9ff13914f2d \
-    linux-yocto-clanton:do_fetch:dbb6f42738a89a493c4a2e068b016ba9 \
-    linux-yocto-clanton:do_install:a992979a5ad42002b79bf64139cd575d \
-    linux-yocto-clanton:do_kernel_checkout:a4e53a758fe038d84ee1cb4a1cf7107c \
-    linux-yocto-clanton:do_kernel_configcheck:3f8eae86392ff3201a015cc4d68a1092 \
-    linux-yocto-clanton:do_kernel_configme:8bef15e50ee06631c8219b1f0bcc1523 \
-    linux-yocto-clanton:do_kernel_link_vmlinux:1fd61ca02350fc2e0b655fc1bdd4b02e \
-    linux-yocto-clanton:do_package:fb9dbcfc5ce8d41866768f16fd62f4a3 \
-    linux-yocto-clanton:do_package_write:24cacd85dd2262700851956981801d1a \
-    linux-yocto-clanton:do_package_write_ipk:eeb535e22ec1297c66728bdc1d5aa575 \
-    linux-yocto-clanton:do_packagedata:4c267d6acd787cc7e1dd604738107639 \
-    linux-yocto-clanton:do_patch:65f09058694f0112f138c0707f3021a6 \
-    linux-yocto-clanton:do_populate_lic:8e1d44139e4d51ebdd21420ad5427a34 \
-    linux-yocto-clanton:do_populate_sysroot:67765d86295695fa1ddecb7eb7c84c3c \
-    linux-yocto-clanton:do_sizecheck:31ae3e0ad8ed4026a21af055d701c3b7 \
-    linux-yocto-clanton:do_strip:f6c8a4bf4a1b2e74c86b9b174c97a501 \
-    linux-yocto-clanton:do_uboot_mkimage:9b1675b638ed4c28e194edabbacc2d15 \
-    linux-yocto-clanton:do_unpack:b3de4ecac25c9b8e6d25c32fed43427a \
-    linux-yocto-clanton:do_validate_branches:1a5d7e56f135b45a3a74d1cace430b65 \
+    linux-yocto-quark:do_bundle_initramfs:03a0b7d8cf5646a3e1e4b7c1b3d1c29e \
+    linux-yocto-quark:do_compile:3c46f41f1ef9919896d80990dd70226e \
+    linux-yocto-quark:do_compile_kernelmodules:46212dc97f3a7199b6f91471755b289f \
+    linux-yocto-quark:do_configure:dbdf1a4ada7925732953d9bef7f8dc2e \
+    linux-yocto-quark:do_deploy:ea7810cb2da47a2d084ca9ff13914f2d \
+    linux-yocto-quark:do_fetch:dbb6f42738a89a493c4a2e068b016ba9 \
+    linux-yocto-quark:do_install:a992979a5ad42002b79bf64139cd575d \
+    linux-yocto-quark:do_kernel_checkout:a4e53a758fe038d84ee1cb4a1cf7107c \
+    linux-yocto-quark:do_kernel_configcheck:3f8eae86392ff3201a015cc4d68a1092 \
+    linux-yocto-quark:do_kernel_configme:8bef15e50ee06631c8219b1f0bcc1523 \
+    linux-yocto-quark:do_kernel_link_vmlinux:1fd61ca02350fc2e0b655fc1bdd4b02e \
+    linux-yocto-quark:do_package:fb9dbcfc5ce8d41866768f16fd62f4a3 \
+    linux-yocto-quark:do_package_write:24cacd85dd2262700851956981801d1a \
+    linux-yocto-quark:do_package_write_ipk:eeb535e22ec1297c66728bdc1d5aa575 \
+    linux-yocto-quark:do_packagedata:4c267d6acd787cc7e1dd604738107639 \
+    linux-yocto-quark:do_patch:65f09058694f0112f138c0707f3021a6 \
+    linux-yocto-quark:do_populate_lic:8e1d44139e4d51ebdd21420ad5427a34 \
+    linux-yocto-quark:do_populate_sysroot:67765d86295695fa1ddecb7eb7c84c3c \
+    linux-yocto-quark:do_sizecheck:31ae3e0ad8ed4026a21af055d701c3b7 \
+    linux-yocto-quark:do_strip:f6c8a4bf4a1b2e74c86b9b174c97a501 \
+    linux-yocto-quark:do_uboot_mkimage:9b1675b638ed4c28e194edabbacc2d15 \
+    linux-yocto-quark:do_unpack:b3de4ecac25c9b8e6d25c32fed43427a \
+    linux-yocto-quark:do_validate_branches:1a5d7e56f135b45a3a74d1cace430b65 \
     linuxptp:do_compile:babbc7c24242f0cbcb8485be0241c841 \
     linuxptp:do_configure:1bb21870a9125e3054cd32f50495a1d5 \
     linuxptp:do_fetch:98ecb4f933ac0b031a0c4f294e475182 \
@@ -905,16 +905,16 @@ SIGGEN_LOCKEDSIGS = "\
     makedevs-native:do_populate_lic:332d9bd4ef55c48b0c46015115667f14 \
     makedevs-native:do_populate_sysroot:c975f1bea535aa786dddb25310981105 \
     makedevs-native:do_unpack:ecfbe02d6e70906d962f0bdb889120ea \
-    meta-environment-clanton:do_compile:7eb6430ed155ea59d1d8d9b38e963119 \
-    meta-environment-clanton:do_configure:4839668cd46c055a7bdbc4efc255a245 \
-    meta-environment-clanton:do_fetch:5c76e66fdf9e584278f9569035a10df6 \
-    meta-environment-clanton:do_generate_content:8423c923f12e8e8ee5ec9af5a1e78ce9 \
-    meta-environment-clanton:do_install:462be13593f529583be0ee2d3dd92884 \
-    meta-environment-clanton:do_package:027216325582191418ceb9d15529aa0b \
-    meta-environment-clanton:do_package_write_ipk:daf9e9339f416093a3178657d586c346 \
-    meta-environment-clanton:do_packagedata:4206994efd9f034b0df6ac75ee1c3bc4 \
-    meta-environment-clanton:do_patch:9190dd7eb5da82ca90772370b7475f06 \
-    meta-environment-clanton:do_unpack:86e1fb19353d6b861fd4aebe280b352a \
+    meta-environment-quark:do_compile:7eb6430ed155ea59d1d8d9b38e963119 \
+    meta-environment-quark:do_configure:4839668cd46c055a7bdbc4efc255a245 \
+    meta-environment-quark:do_fetch:5c76e66fdf9e584278f9569035a10df6 \
+    meta-environment-quark:do_generate_content:8423c923f12e8e8ee5ec9af5a1e78ce9 \
+    meta-environment-quark:do_install:462be13593f529583be0ee2d3dd92884 \
+    meta-environment-quark:do_package:027216325582191418ceb9d15529aa0b \
+    meta-environment-quark:do_package_write_ipk:daf9e9339f416093a3178657d586c346 \
+    meta-environment-quark:do_packagedata:4206994efd9f034b0df6ac75ee1c3bc4 \
+    meta-environment-quark:do_patch:9190dd7eb5da82ca90772370b7475f06 \
+    meta-environment-quark:do_unpack:86e1fb19353d6b861fd4aebe280b352a \
     mklibs-native:do_compile:24deeebbe57ecd23f110b143029b134e \
     mklibs-native:do_configure:bc72dac8ca29e18513cb9a82157934f7 \
     mklibs-native:do_fetch:1bd58cdf9058238cdc1e296d3f1cbe71 \
@@ -1575,16 +1575,16 @@ SIGGEN_LOCKEDSIGS = "\
     packagegroup-core-standalone-sdk-target:do_patch:8ab9e98e29b6669bfa2d7ade9ea4f194 \
     packagegroup-core-standalone-sdk-target:do_populate_sysroot:e43d594d5ec35acae680dc7c4fdd52e8 \
     packagegroup-core-standalone-sdk-target:do_unpack:86e1fb19353d6b861fd4aebe280b352a \
-    packagegroup-cross-canadian-clanton:do_compile:f08b66ce0ca7af10886e66626df29f05 \
-    packagegroup-cross-canadian-clanton:do_configure:070120dd369b3c6980f767024f911ad0 \
-    packagegroup-cross-canadian-clanton:do_fetch:5c76e66fdf9e584278f9569035a10df6 \
-    packagegroup-cross-canadian-clanton:do_install:06160310d33626089ed8761a36249d7e \
-    packagegroup-cross-canadian-clanton:do_package:8d9617f1c06f5e51e0d2fe56b97339aa \
-    packagegroup-cross-canadian-clanton:do_package_write_ipk:fe1cda87c520cdc4524b3df028832109 \
-    packagegroup-cross-canadian-clanton:do_packagedata:ecfde4f731599999f4bd1b8cfecb4e2f \
-    packagegroup-cross-canadian-clanton:do_patch:c1742408be59270faae4ba97f2838cd4 \
-    packagegroup-cross-canadian-clanton:do_populate_sysroot:e574ab03abc8eda82c9191c31b2e8fc4 \
-    packagegroup-cross-canadian-clanton:do_unpack:86e1fb19353d6b861fd4aebe280b352a \
+    packagegroup-cross-canadian-quark:do_compile:f08b66ce0ca7af10886e66626df29f05 \
+    packagegroup-cross-canadian-quark:do_configure:070120dd369b3c6980f767024f911ad0 \
+    packagegroup-cross-canadian-quark:do_fetch:5c76e66fdf9e584278f9569035a10df6 \
+    packagegroup-cross-canadian-quark:do_install:06160310d33626089ed8761a36249d7e \
+    packagegroup-cross-canadian-quark:do_package:8d9617f1c06f5e51e0d2fe56b97339aa \
+    packagegroup-cross-canadian-quark:do_package_write_ipk:fe1cda87c520cdc4524b3df028832109 \
+    packagegroup-cross-canadian-quark:do_packagedata:ecfde4f731599999f4bd1b8cfecb4e2f \
+    packagegroup-cross-canadian-quark:do_patch:c1742408be59270faae4ba97f2838cd4 \
+    packagegroup-cross-canadian-quark:do_populate_sysroot:e574ab03abc8eda82c9191c31b2e8fc4 \
+    packagegroup-cross-canadian-quark:do_unpack:86e1fb19353d6b861fd4aebe280b352a \
     perl-native:do_compile:94df5e021e396b1c73f46c387a82fa71 \
     perl-native:do_configure:825e47f7b95d049dfaeead7cfe4bb56c \
     perl-native:do_fetch:2e1227cb3d9b53000d9bc18782170e45 \
