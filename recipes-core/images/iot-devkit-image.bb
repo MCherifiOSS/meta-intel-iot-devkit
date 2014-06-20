@@ -43,11 +43,10 @@ IMAGE_INSTALL += "bluez5"
 
 IMAGE_INSTALL += "avahi libdns-sd"
 IMAGE_INSTALL += "fuse-utils"
-IMAGE_INSTALL += "connman connman-client"
+IMAGE_INSTALL += "connman connman-client connman-tests"
 IMAGE_INSTALL += "tzdata"
 IMAGE_INSTALL += "ca-certificates"
 IMAGE_INSTALL += "icu"
-
 IMAGE_INSTALL += "opencv"
 
 IMAGE_INSTALL += "maa upm"
