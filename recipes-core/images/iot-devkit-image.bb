@@ -48,7 +48,7 @@ IMAGE_INSTALL += "opencv"
 IMAGE_INSTALL += "swig"
 IMAGE_INSTALL += "lighttpd"
 
-IMAGE_INSTALL += "maa upm"
+IMAGE_INSTALL += "mraa upm"
 IMAGE_INSTALL += "timedate-scripts galileo-init"
 
 IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
