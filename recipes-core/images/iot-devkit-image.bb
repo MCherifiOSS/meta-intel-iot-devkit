@@ -52,6 +52,7 @@ IMAGE_INSTALL += "mraa upm"
 IMAGE_INSTALL += "timedate-scripts"
 IMAGE_INSTALL += "wyliodrin-server-nodejs"
 IMAGE_INSTALL += "iotkit-agent"
+IMAGE_INSTALL += "xdk-daemon"
 
 IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
 
@@ -60,7 +61,7 @@ IMAGE_INSTALL += "lib32-uclibc lib32-uclibc-libm lib32-libstdc++ lib32-uclibc-li
 # make sure no lib32-* libs get chosen by IMAGE_FEATURES
 PACKAGE_EXCLUDE_COMPLEMENTARY = "lib32-.*"
 
-ROOTFS_POSTPROCESS_COMMAND += "simlink_ld_uclibc ; install_repo ; simlink_node_modules; install_wyliodrin"
+ROOTFS_POSTPROCESS_COMMAND += "simlink_ld_uclibc ; install_repo ; simlink_node_modules; install_xdk; install_wyliodrin"
 
 simlink_ld_uclibc() {
   # This allows uclibc compiled binaries to find the uclibc loader note that
@@ -70,6 +71,11 @@ simlink_ld_uclibc() {
 
 install_repo() {
   echo "src mraa-upm http://iotdk.intel.com/repos/1.1/intelgalactic" > ${IMAGE_ROOTFS}/etc/opkg/mraa-upm.conf
+}
+
+install_xdk() {
+  # Create app_slot dir for XDK daemon
+  install -d ${IMAGE_ROOTFS}/node_app_slot
 }
 
 simlink_node_modules() {
