@@ -68,7 +68,7 @@ simlink_ld_uclibc() {
 }
 
 install_repo() {
-  echo "src maa-upm http://iotdk.intel.com/repos/1.1/intelgalactic" > ${IMAGE_ROOTFS}/etc/opkg/maa-upm.conf
+  echo "src mraa-upm http://iotdk.intel.com/repos/1.1/intelgalactic" > ${IMAGE_ROOTFS}/etc/opkg/mraa-upm.conf
 }
 
 simlink_node_modules() {
