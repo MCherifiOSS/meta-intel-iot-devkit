@@ -21,5 +21,3 @@ IMAGE_INSTALL += "strace"
 IMAGE_INSTALL += "ppp"
 IMAGE_INSTALL += "linuxptp"
 IMAGE_INSTALL += "libstdc++"
-
-IMAGE_INSTALL += "galileo-init"
