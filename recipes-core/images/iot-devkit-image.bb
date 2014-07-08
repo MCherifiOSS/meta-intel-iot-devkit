@@ -49,7 +49,7 @@ IMAGE_INSTALL += "swig"
 IMAGE_INSTALL += "lighttpd"
 
 IMAGE_INSTALL += "mraa upm"
-IMAGE_INSTALL += "timedate-scripts galileo-init"
+IMAGE_INSTALL += "timedate-scripts"
 IMAGE_INSTALL += "iotkit-agent"
 
 IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
@@ -58,13 +58,10 @@ IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
 IMAGE_INSTALL += "lib32-uclibc lib32-uclibc-libm lib32-libstdc++ lib32-uclibc-libpthread"
 # make sure no lib32-* libs get chosen by IMAGE_FEATURES
 PACKAGE_EXCLUDE_COMPLEMENTARY = "lib32-.*"
-IMAGE_INSTALL += "galileo-target"
 
-ROOTFS_POSTPROCESS_COMMAND += "install_sketch ; install_repo ; simlink_node_modules;"
+ROOTFS_POSTPROCESS_COMMAND += "simlink_ld_uclibc ; install_repo ; simlink_node_modules;"
 
-install_sketch() {
-  # Create /sketch directory required to run arduino sketches
-  install -d ${IMAGE_ROOTFS}/sketch
+simlink_ld_uclibc() {
   # This allows uclibc compiled binaries to find the uclibc loader note that
   # binaries will not run unless LD_LIBRARY_PATH is set correctly
   cd ${IMAGE_ROOTFS}/lib/; ln -s ../lib32/ld-uClibc.so.0
