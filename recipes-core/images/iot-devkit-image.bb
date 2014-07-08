@@ -50,6 +50,7 @@ IMAGE_INSTALL += "lighttpd"
 
 IMAGE_INSTALL += "mraa upm"
 IMAGE_INSTALL += "timedate-scripts"
+IMAGE_INSTALL += "wyliodrin-server-nodejs"
 IMAGE_INSTALL += "iotkit-agent"
 
 IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
@@ -59,7 +60,7 @@ IMAGE_INSTALL += "lib32-uclibc lib32-uclibc-libm lib32-libstdc++ lib32-uclibc-li
 # make sure no lib32-* libs get chosen by IMAGE_FEATURES
 PACKAGE_EXCLUDE_COMPLEMENTARY = "lib32-.*"
 
-ROOTFS_POSTPROCESS_COMMAND += "simlink_ld_uclibc ; install_repo ; simlink_node_modules;"
+ROOTFS_POSTPROCESS_COMMAND += "simlink_ld_uclibc ; install_repo ; simlink_node_modules; install_wyliodrin"
 
 simlink_ld_uclibc() {
   # This allows uclibc compiled binaries to find the uclibc loader note that
@@ -75,6 +76,11 @@ simlink_node_modules() {
   # Create simlink form /usr/lib/node_modules/ to /usr/lib/node/ as different
   # people seem to want different paths
   cd ${IMAGE_ROOTFS}/usr/lib/; ln -s node_modules node
+}
+
+install_wyliodrin() {
+  # Wyliodrin requires the boot partition to be mounted as /media/card
+  install -d ${IMAGE_ROOTFS}/media/card
 }
 
 EXTRA_IMAGEDEPENDS = "grub-conf"
