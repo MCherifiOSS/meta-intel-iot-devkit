@@ -9,6 +9,7 @@ IMAGE_INSTALL += "packagegroup-core-buildessential"
 IMAGE_INSTALL += "git"
 IMAGE_ISNTALL += "mraa-doc"
 IMAGE_INSTALL += "python-setuptools"
+IMAGE_INSTALL += "i2c-tools"
 
 IMAGE_FEATURES += "dev-pkgs tools-sdk"
 EXTRA_IMAGE_FEATURES = "debug-tweaks"
