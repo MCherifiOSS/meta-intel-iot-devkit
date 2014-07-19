@@ -61,7 +61,7 @@ IMAGE_INSTALL += "lib32-uclibc lib32-uclibc-libm lib32-libstdc++ lib32-uclibc-li
 # make sure no lib32-* libs get chosen by IMAGE_FEATURES
 PACKAGE_EXCLUDE_COMPLEMENTARY = "lib32-.*"
 
-ROOTFS_POSTPROCESS_COMMAND += "simlink_ld_uclibc ; install_repo ; simlink_node_modules; install_xdk; install_wyliodrin"
+ROOTFS_POSTPROCESS_COMMAND += "simlink_ld_uclibc ; install_repo ; simlink_node_modules ; install_xdk ; install_wyliodrin ;"
 
 simlink_ld_uclibc() {
   # This allows uclibc compiled binaries to find the uclibc loader note that
