@@ -1,13 +1,7 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
-# modules.conf file is missing
-#SRC_URI += "file://modules.conf"
+PACKAGE_INSTALL = "initramfs-live-boot busybox base-passwd udev"
 
-IMAGE_INSTALL = "initramfs-live-boot busybox base-passwd udev"
-
-IMAGE_INSTALL += "kernel-module-usb-storage"
-IMAGE_INSTALL += "kernel-module-ehci-hcd kernel-module-ehci-pci kernel-module-ohci-hcd"
-IMAGE_INSTALL += "kernel-module-stmmac"
-
-PACKAGE_INSTALL_remove = "initramfs-live-install initramfs-live-install-efi"
-
+PACKAGE_INSTALL += "kernel-module-usb-storage"
+PACKAGE_INSTALL += "kernel-module-ehci-hcd kernel-module-ehci-pci kernel-module-ohci-hcd"
+PACKAGE_INSTALL += "kernel-module-stmmac"
