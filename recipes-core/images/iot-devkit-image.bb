@@ -73,6 +73,7 @@ simlink_ld_uclibc() {
 
 install_repo() {
   echo "src mraa-upm http://iotdk.intel.com/repos/1.1/intelgalactic" > ${IMAGE_ROOTFS}/etc/opkg/mraa-upm.conf
+  echo "src iotdk http://iotdk.intel.com/repos/1.1/iotdk" > ${IMAGE_ROOTFS}/etc/opkg/iotdk.conf
 }
 
 install_xdk() {
