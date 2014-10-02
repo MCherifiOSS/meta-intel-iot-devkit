@@ -60,6 +60,8 @@ IMAGE_INSTALL += "packagegroup-core-eclipse-debug"
 IMAGE_INSTALL += "lib32-uclibc lib32-uclibc-libm lib32-libstdc++ lib32-uclibc-libpthread"
 # make sure no lib32-* libs get chosen by IMAGE_FEATURES
 PACKAGE_EXCLUDE_COMPLEMENTARY = "lib32-.*"
+# exclude lib32 packages from world builds
+EXCLUDE_FROM_WORLD_virtclass-multilib-lib32 = "1"
 
 ROOTFS_POSTPROCESS_COMMAND += "simlink_ld_uclibc ; install_repo ; simlink_node_modules ; install_xdk ; install_wyliodrin ;"
 
