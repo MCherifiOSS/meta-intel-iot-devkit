@@ -1,4 +1,4 @@
-module_autoload_iwlwifi = "iwlwifi"
+module_autoload_iwlwifi_iot-devkit = "iwlwifi"
 module_autoload_btusb = "btusb"
 
 # swap g_serial for g_acm_ms
