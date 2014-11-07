@@ -267,3 +267,6 @@ HOB_IMAGELIST = "iot-devkit-image:iot-devkit-locked iot-devkit-prof-image:iot-de
 
 # These are required for hob-iot
 INHERIT += " image_types packageinfo "
+
+# disable lib32-* packages being built in world
+EXCLUDE_FROM_WORLD_virtclass-multilib-lib32 = "1"
