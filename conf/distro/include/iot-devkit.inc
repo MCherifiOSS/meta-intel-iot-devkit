@@ -1,11 +1,10 @@
 SANITY_TESTED_DISTROS = " \
-            Poky-1.5 \n \
+            poky-1.6 \n \
             Ubuntu-12.04 \n \
-            Ubuntu-13.10 \n \
-            Fedora-19 \n \
+            Ubuntu-14.04 \n \
             Fedora-20 \n \
-            Debian-7.6 \n \
-            openSUSE-project-12.3 \n \
+            Debian-7.8 \n \
+            openSUSE-project-13.1 \n \
             "
 
 DISTRO_VERSION = "1.1"
