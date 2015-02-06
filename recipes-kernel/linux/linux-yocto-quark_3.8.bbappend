@@ -2,8 +2,8 @@ module_autoload_iwlwifi_iot-devkit = "iwlwifi"
 module_autoload_btusb = "btusb"
 
 # swap g_serial for g_acm_ms
-module_autoload_pch_udc = " pch_udc g_acm_ms"
-module_conf_g_acm_ms = "options g_acm_ms file=/dev/mmcblk0p1 removable=1 idVendor=0x8086 idProduct=0xDEAD"
+module_autoload_pch_udc_iot-devkit = " pch_udc g_acm_ms"
+module_conf_g_acm_ms_iot-devkit = "options g_acm_ms file=/dev/mmcblk0p1 removable=1 idVendor=0x8086 idProduct=0xDEAD"
 
 # PPP module autoload
 module_autoload_pppox = "pppox"
